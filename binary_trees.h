@@ -58,4 +58,93 @@ int binary_tree_is_leaf(const binary_tree_t *node);
 
 int binary_tree_is_root(const binary_tree_t *node);
 
+/*
+ * binary_tree_preorder - A function goes through the binary tree
+ * using preorder traversal
+ * @tree: A pointer to the root of the tree
+ * @func: A pinter to a function that calls for each node
+ */
+
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
+
+/**
+ * binary_tree_inorder - A function goes through a binary tree in
+ * an in-order traversal
+ * @tree: the root node of the binary tree
+ * @func: A pointer to the function that calls for each node
+ *
+ */
+
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
+
+/*
+ * binary_tree_postorder - A function goes through binary tree using
+ * postorder traversal
+ * @tree: A pointer to the root node of the tree
+ * @func: A pointer to a function calls for each node
+ */
+
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+
+/**
+ * binary_tree_height - A function measures the hieght of a binary tree
+ * @tree: A pointer to the root node of the tree
+ *
+ * Return: The height of the tree
+ */
+
+size_t binary_tree_height(const binary_tree_t *tree);
+
+/**
+ * binary_tree_size - A function measures the size of a binary tree
+ * @tree: A pointer to the root node of the tree
+ *
+ * Return: the size of the tree
+ */
+
+size_t binary_tree_size(const binary_tree_t *tree);
+
+/**
+ * binary_tree_leaves - A function counts the leaves in a binary tree
+ * @tree: A pointer to the root node of the tree
+ *
+ * Return: the leaves count
+ */
+
+size_t binary_tree_leaves(const binary_tree_t *tree);
+
+/**
+ * binary_tree_nodes - A function  counts nodes with atleast on child
+ * in a tree
+ * @tree: A pointer to the root node of the tree
+ *
+ * Return: The number of nodes
+ */
+
+size_t binary_tree_nodes(const binary_tree_t *tree);
+
+/**
+ * tree_height - A function measures tree height as int
+ * @tree: pointer to root node of the binary tree
+ *
+ * Return: height as int
+ */
+
+int tree_height(const binary_tree_t *tree);
+
+/**
+ * binary_tree_balance - A function measures the blancec factor of a tree
+ * @tree: A pointer to the root node of the binary tree
+ *
+ * Return: The blance factor of the tree
+ */
+int binary_tree_balance(const binary_tree_t *tree);
+/*
+ * binary_tree_is_full - A function checks if the binary tree is full
+ * @tree: A pointer to the root node of the tree
+ *
+ * Return: 1 if tree is full 0 otherwise
+ */
+
+int binary_tree_is_full(const binary_tree_t *tree);
 #endif
