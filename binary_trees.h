@@ -131,7 +131,7 @@ size_t binary_tree_nodes(const binary_tree_t *tree);
  */
 
 int tree_height(const binary_tree_t *tree);
-
+size_t binary_tree_depth(const binary_tree_t *tree);
 /**
  * binary_tree_balance - A function measures the blancec factor of a tree
  * @tree: A pointer to the root node of the binary tree
