@@ -147,4 +147,14 @@ int binary_tree_balance(const binary_tree_t *tree);
  */
 
 int binary_tree_is_full(const binary_tree_t *tree);
+
+binary_tree_t *binary_tree_sibling(binary_tree_t *node);
+
+/**
+ * binary_tree_uncle - A function finds the uncle of the tree
+ * @node: A pointer to the node to find it's uncle
+ *
+ * Return: A pointer to the node uncle or NULL
+ */
+binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 #endif
